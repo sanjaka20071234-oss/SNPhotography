@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixel Lens Photography — Capturing Moments. Creating Memories.</title>
+  <meta name="description" content="Pixel Lens Photography is a premium photography studio specializing in weddings, portraits, events, fashion, product and outdoor photography. Book your session today." />
+  <meta name="keywords" content="photography studio, wedding photography, portrait photography, event photography, fashion photography, professional photographer" />
+  <meta property="og:title" content="Pixel Lens Photography" />
+  <meta property="og:description" content="Capturing Moments. Creating Memories. A luxury cinematic photography studio." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__mark">
+      <span class="preloader__lens"></span>
+      <span class="preloader__text">PIXEL&nbsp;LENS</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#home" class="nav__brand" aria-label="Pixel Lens Photography — Home">
+        <svg class="nav__logo" viewBox="0 0 40 40" width="34" height="34" aria-hidden="true">
+          <circle cx="20" cy="20" r="17" fill="none" stroke="#3B82F6" stroke-width="2.5"/>
+          <circle cx="20" cy="20" r="8" fill="none" stroke="#3B82F6" stroke-width="2"/>
+          <circle cx="25" cy="14" r="2.6" fill="#3B82F6"/>
+        </svg>
+        <span class="nav__wordmark">PIXEL<em>LENS</em></span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary navigation">
+        <a href="#home" class="nav__link is-active">Home</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#portfolio" class="nav__link">Portfolio</a>
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#testimonials" class="nav__link">Testimonials</a>
+        <a href="#booking" class="nav__link">Booking</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <a href="#booking" class="nav__cta">Book a Session</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero__bg" role="img" aria-label="Photographer capturing a scene at dusk"></div>
+      <div class="hero__scrim"></div>
+      <div class="hero__content container">
+        <p class="hero__eyebrow reveal">Fine Art Photography Studio</p>
+        <h1 class="hero__title reveal">PIXEL LENS<br /><span>PHOTOGRAPHY</span></h1>
+        <p class="hero__tagline reveal">Capturing Moments. Creating Memories.</p>
+        <p class="hero__intro reveal">An award-winning studio crafting cinematic imagery for weddings, portraits,
+          editorial and commercial stories — every frame composed with obsession, lit with intention.</p>
+        <div class="hero__actions reveal">
+          <a href="#portfolio" class="btn btn--primary">Explore Portfolio</a>
+          <a href="#booking" class="btn btn--ghost">Book a Session</a>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll to about section">
+        <span class="hero__scroll-line"></span>Scroll
+      </a>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container about__grid">
+        <div class="about__media reveal">
+          <img src="https://images.unsplash.com/photo-1493863641943-9b68992a8d07?w=900&q=80&auto=format&fit=crop"
+               alt="Lead photographer holding a vintage film camera" loading="lazy" />
+          <div class="about__media-badge glass">
+            <span class="about__badge-num">12+</span>
+            <span class="about__badge-label">Years Behind<br />the Lens</span>
+          </div>
+        </div>
+        <div class="about__text">
+          <p class="section__eyebrow reveal">About the Studio</p>
+          <h2 class="section__title reveal">Light is our language.<br /><em>Stories are our craft.</em></h2>
+          <p class="reveal">Founded in a small darkroom and grown into a full-service studio, Pixel Lens Photography
+            is the vision of lead photographer <strong>Adrian Vale</strong> — a storyteller who believes a photograph
+            should feel the way the moment felt.</p>
+          <p class="reveal">From intimate elopements on cliff tops to high-fashion editorials in the studio, we blend
+            documentary instinct with cinematic grade. Every commission receives a tailored creative treatment, a
+            calm on-set presence, and a gallery of museum-grade, high-resolution imagery.</p>
+          <ul class="about__stats reveal">
+            <li><strong data-count="480">0</strong><span>Sessions Delivered</span></li>
+            <li><strong data-count="210">0</strong><span>Weddings Captured</span></li>
+            <li><strong data-count="35">0</strong><span>Awards &amp; Features</span></li>
+          </ul>
+          <a href="#contact" class="btn btn--primary reveal">Meet the Photographer</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio section section--alt" id="portfolio">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="section__eyebrow reveal">Selected Work</p>
+            <h2 class="section__title reveal">The Portfolio</h2>
+          </div>
+          <p class="section__sub reveal">A curated selection across six disciplines. Filter by category,
+            or open any frame in the lightbox for the full cinematic view.</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Portfolio category filters">
+          <button class="filters__btn is-active" data-filter="all">All Work</button>
+          <button class="filters__btn" data-filter="weddings">Weddings</button>
+          <button class="filters__btn" data-filter="portraits">Portraits</button>
+          <button class="filters__btn" data-filter="nature">Nature</button>
+          <button class="filters__btn" data-filter="events">Events</button>
+          <button class="filters__btn" data-filter="fashion">Fashion</button>
+          <button class="filters__btn" data-filter="travel">Travel</button>
+        </div>
+
+        <div class="gallery" id="gallery">
+          <figure class="gallery__item reveal" data-category="weddings">
+            <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=900&q=80&auto=format&fit=crop" alt="Bride and groom kissing under falling confetti" loading="lazy" />
+            <figcaption><span>Weddings</span>The Confetti Kiss</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="portraits">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=900&q=80&auto=format&fit=crop" alt="Natural-light studio portrait of a woman" loading="lazy" />
+            <figcaption><span>Portraits</span>Quiet Confidence</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=900&q=80&auto=format&fit=crop" alt="Fog rolling over forested mountain ridges at dawn" loading="lazy" />
+            <figcaption><span>Nature</span>Where Fog Sleeps</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="events">
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=900&q=80&auto=format&fit=crop" alt="Guests celebrating with confetti at an evening event" loading="lazy" />
+            <figcaption><span>Events</span>The Confetti Hour</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="fashion">
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=900&q=80&auto=format&fit=crop" alt="Editorial fashion portrait in red against a studio backdrop" loading="lazy" />
+            <figcaption><span>Fashion</span>Scarlet Editorial</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="travel">
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=900&q=80&auto=format&fit=crop" alt="Road winding through a dramatic desert landscape" loading="lazy" />
+            <figcaption><span>Travel</span>The Long Road</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="weddings">
+            <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=900&q=80&auto=format&fit=crop" alt="Close-up of a wedding couple holding hands" loading="lazy" />
+            <figcaption><span>Weddings</span>Hand in Hand</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="portraits">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=900&q=80&auto=format&fit=crop" alt="Black and white portrait of a man in warm light" loading="lazy" />
+            <figcaption><span>Portraits</span>Mono Study</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=900&q=80&auto=format&fit=crop" alt="Sunlight streaming through a forest of tall pines" loading="lazy" />
+            <figcaption><span>Nature</span>Cathedral of Pines</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="events">
+            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=900&q=80&auto=format&fit=crop" alt="Crowd with raised hands at a live concert event" loading="lazy" />
+            <figcaption><span>Events</span>Electric Crowd</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="fashion">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=900&q=80&auto=format&fit=crop" alt="High-fashion model with shopping bags in the city" loading="lazy" />
+            <figcaption><span>Fashion</span>City Couture</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="travel">
+            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=900&q=80&auto=format&fit=crop" alt="Canoes resting on a turquoise mountain lake at sunrise" loading="lazy" />
+            <figcaption><span>Travel</span>Still Water Morning</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox" hidden>
+      <button class="lightbox__close" id="lightboxClose" aria-label="Close lightbox">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="lightbox__arrow lightbox__arrow--prev" id="lightboxPrev" aria-label="Previous image">
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <figure class="lightbox__stage">
+        <img id="lightboxImg" src="" alt="" />
+        <figcaption id="lightboxCaption"></figcaption>
+      </figure>
+      <button class="lightbox__arrow lightbox__arrow--next" id="lightboxNext" aria-label="Next image">
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+
+    <!-- Services -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="section__eyebrow reveal">What We Create</p>
+            <h2 class="section__title reveal">Our Services</h2>
+          </div>
+          <p class="section__sub reveal">Six disciplines, one standard: imagery that outlives the moment it records.</p>
+        </div>
+        <div class="services__grid">
+          <article class="service-card glass reveal">
+            <svg class="service-card__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l3.5 7 7.5 1-5.5 5.2 1.4 7.8L16 20.4 9.1 24l1.4-7.8L5 11l7.5-1z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <h3>Wedding Photography</h3>
+            <p>Full-day storytelling — from the quiet details of the morning to the last dance. Discreet, cinematic, timeless.</p>
+          </article>
+          <article class="service-card glass reveal">
+            <svg class="service-card__icon" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="11" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5 27c2.5-6 7-8.5 11-8.5S24.5 21 27 27" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <h3>Portrait Photography</h3>
+            <p>Studio and environmental portraits that reveal character — for professionals, families and personal brands.</p>
+          </article>
+          <article class="service-card glass reveal">
+            <svg class="service-card__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M6 14v10h20V14M4 10h24v4H4zM11 20h10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="10" r="2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            <h3>Event Photography</h3>
+            <p>Concerts, galas, conferences and launches — energy captured frame by frame with fast, unobtrusive coverage.</p>
+          </article>
+          <article class="service-card glass reveal">
+            <svg class="service-card__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4L6 9v7c0 6 4 10.5 10 12 6-1.5 10-6 10-12V9z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 16.5l3 3 5.5-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Fashion Photography</h3>
+            <p>Editorial concepts, lookbooks and campaign imagery with full creative direction, styling and retouching.</p>
+          </article>
+          <article class="service-card glass reveal">
+            <svg class="service-card__icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="7" y="7" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="16" cy="16" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M20.5 11.5h.01" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+            <h3>Product Photography</h3>
+            <p>Crisp, colour-true product imagery for e-commerce and campaigns — lit to sell, composed to be remembered.</p>
+          </article>
+          <article class="service-card glass reveal">
+            <svg class="service-card__icon" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M16 3v4M16 25v4M3 16h4M25 16h4M6.8 6.8l2.8 2.8M22.4 22.4l2.8 2.8M25.2 6.8l-2.8 2.8M9.6 22.4l-2.8 2.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <h3>Outdoor Photography</h3>
+            <p>Golden-hour landscapes, adventure shoots and destination commissions in the world's most dramatic light.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why section section--alt" id="why">
+      <div class="container why__grid">
+        <div class="why__intro">
+          <p class="section__eyebrow reveal">The Pixel Lens Standard</p>
+          <h2 class="section__title reveal">Why Couples &amp; Brands<br /><em>Choose Us</em></h2>
+          <p class="reveal">Great photography is a promise kept in a fraction of a second. Here is what we bring to
+            every commission, without exception.</p>
+          <img class="why__img reveal" src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=900&q=80&auto=format&fit=crop"
+               alt="Photographer reviewing shots on a camera LCD at dusk" loading="lazy" />
+        </div>
+        <div class="why__list">
+          <div class="why__item reveal">
+            <span class="why__num">01</span>
+            <div><h3>Professional Quality</h3>
+            <p>Full-frame systems, colour-calibrated workflow and a master retoucher on every gallery — no shortcuts, ever.</p></div>
+          </div>
+          <div class="why__item reveal">
+            <span class="why__num">02</span>
+            <div><h3>Creative Vision</h3>
+            <p>Every shoot begins with a concept board. We direct light, mood and narrative like a film, not a transaction.</p></div>
+          </div>
+          <div class="why__item reveal">
+            <span class="why__num">03</span>
+            <div><h3>High-Resolution Images</h3>
+            <p>You receive print-ready files up to 60 megapixels, licensed for personal and commercial use.</p></div>
+          </div>
+          <div class="why__item reveal">
+            <span class="why__num">04</span>
+            <div><h3>Customer Satisfaction</h3>
+            <p>A 48-hour preview, a private online gallery and unlimited reasonable revisions — 98% of clients return.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <p class="section__eyebrow reveal">Client Words</p>
+          <h2 class="section__title reveal">Testimonials</h2>
+        </div>
+        <div class="testimonials__grid">
+          <article class="testimonial glass reveal">
+            <div class="testimonial__stars" aria-label="5 out of 5 stars"></div>
+            <blockquote>“Adrian didn't just photograph our wedding — he understood it. When we got the gallery back,
+              we cried all over again. Every image feels like a film still from the best day of our lives.”</blockquote>
+            <footer>
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80&auto=format&fit=crop" alt="Portrait of client Sofia Marchetti" loading="lazy" />
+              <div><strong>Sofia &amp; Daniel Marchetti</strong><span>Wedding, Lake Como</span></div>
+            </footer>
+          </article>
+          <article class="testimonial glass reveal">
+            <div class="testimonial__stars" aria-label="5 out of 5 stars"></div>
+            <blockquote>“Our product line finally looks the way it deserves. The colour accuracy is flawless and the
+              campaign shots lifted our conversion rate by a third. Worth every cent.”</blockquote>
+            <footer>
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80&auto=format&fit=crop" alt="Portrait of client Marcus Chen" loading="lazy" />
+              <div><strong>Marcus Chen</strong><span>Founder, Aurelia Cosmetics</span></div>
+            </footer>
+          </article>
+          <article class="testimonial glass reveal">
+            <div class="testimonial__stars" aria-label="5 out of 5 stars"></div>
+            <blockquote>“I've had portraits taken my whole career and never felt comfortable in front of a camera —
+              until this studio. Calm, kind and extraordinarily skilled. The results speak for themselves.”</blockquote>
+            <footer>
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&q=80&auto=format&fit=crop" alt="Portrait of client Amara Osei" loading="lazy" />
+              <div><strong>Amara Osei</strong><span>Executive Portrait Session</span></div>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="booking section section--alt" id="booking">
+      <div class="container booking__grid">
+        <div class="booking__intro">
+          <p class="section__eyebrow reveal">Reserve Your Date</p>
+          <h2 class="section__title reveal">Book a Session</h2>
+          <p class="reveal">Tell us about your vision and we'll reply within 24 hours with availability,
+            a tailored quote and a complimentary planning call.</p>
+          <ul class="booking__points reveal">
+            <li>Complimentary pre-shoot consultation</li>
+            <li>48-hour sneak-peek delivery</li>
+            <li>Private online gallery for sharing</li>
+          </ul>
+          <img class="booking__img reveal" src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=900&q=80&auto=format&fit=crop"
+               alt="Studio lighting equipment prepared for a shoot" loading="lazy" />
+        </div>
+        <form class="booking__form glass reveal" id="bookingForm" novalidate>
+          <div class="field">
+            <label for="bkName">Full Name</label>
+            <input type="text" id="bkName" name="name" placeholder="Jane Doe" autocomplete="name" required />
+            <span class="field__error" data-error-for="bkName"></span>
+          </div>
+          <div class="field">
+            <label for="bkEmail">Email Address</label>
+            <input type="email" id="bkEmail" name="email" placeholder="jane@example.com" autocomplete="email" required />
+            <span class="field__error" data-error-for="bkEmail"></span>
+          </div>
+          <div class="field">
+            <label for="bkPhone">Phone Number</label>
+            <input type="tel" id="bkPhone" name="phone" placeholder="+1 555 000 1234" autocomplete="tel" required />
+            <span class="field__error" data-error-for="bkPhone"></span>
+          </div>
+          <div class="field">
+            <label for="bkType">Photography Type</label>
+            <select id="bkType" name="type" required>
+              <option value="" selected disabled>Select a service…</option>
+              <option>Wedding Photography</option>
+              <option>Portrait Photography</option>
+              <option>Event Photography</option>
+              <option>Fashion Photography</option>
+              <option>Product Photography</option>
+              <option>Outdoor Photography</option>
+            </select>
+            <span class="field__error" data-error-for="bkType"></span>
+          </div>
+          <div class="field">
+            <label for="bkDate">Preferred Date</label>
+            <input type="date" id="bkDate" name="date" required />
+            <span class="field__error" data-error-for="bkDate"></span>
+          </div>
+          <div class="field field--full">
+            <label for="bkMsg">Message</label>
+            <textarea id="bkMsg" name="message" rows="4" placeholder="Tell us about your event, location, and vision…" required></textarea>
+            <span class="field__error" data-error-for="bkMsg"></span>
+          </div>
+          <button type="submit" class="btn btn--primary field--full">Send Booking Request</button>
+          <p class="booking__note field--full">Your request is stored securely in this browser — no data leaves your device.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Booking success modal -->
+    <div class="modal" id="successModal" role="dialog" aria-modal="true" aria-labelledby="successTitle" hidden>
+      <div class="modal__card glass">
+        <svg class="modal__check" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24" fill="none" stroke="#3B82F6" stroke-width="2"/><path fill="none" stroke="#3B82F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M15 27l7 7 15-16"/></svg>
+        <h3 id="successTitle">Request Received</h3>
+        <p id="successMsg">Thank you! We'll confirm your session within 24 hours.</p>
+        <button class="btn btn--primary" id="successClose">Wonderful</button>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <p class="section__eyebrow reveal">Get in Touch</p>
+          <h2 class="section__title reveal">Contact the Studio</h2>
+        </div>
+        <div class="contact__grid">
+          <a class="contact-card glass reveal" href="https://wa.me/15551234567" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M12 3a9 9 0 00-7.8 13.5L3 21l4.6-1.2A9 9 0 1012 3z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8.8 8.6c.3-.7 1-.8 1.4-.4l.7 1.1c.2.4.1.9-.2 1.2l-.5.5c.5 1.1 1.4 2 2.5 2.5l.5-.5c.3-.3.8-.4 1.2-.2l1.1.7c.4.4.3 1.1-.4 1.4-.7.3-1.7.5-2.7.1-2.1-.8-3.9-2.6-4.7-4.7-.4-1-.2-2 .1-2.7z" fill="currentColor"/></svg>
+            <h3>WhatsApp</h3>
+            <p>+94 760609648</p>
+            <span>Chat instantly — replies within minutes</span>
+          </a>
+          <a class="contact-card glass reveal" href="mailto:@PixelLensPhotograpy">
+            <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3.5 6.5L12 13l8.5-6.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            <h3>Email</h3>
+            <p>sanjakanidarshana@gmail.com</p>
+            <span>For quotes, collaborations &amp; press</span>
+          </a>
+          <div class="contact-card glass reveal">
+            <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+            <h3>Studio</h3>
+            <p>Mthupanthiya</p>
+            <span>Sri LankaNY</span>
+          </div>
+          <div class="contact-card glass reveal">
+            <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            <h3>Opening Hours</h3>
+            <p>Mon – Sat · 9:00 – 19:00</p>
+            <span>Sessions by appointment only</span>
+          </div>
+        </div>
+        <div class="socials reveal" aria-label="Social media links">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg>
+          </a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M14.5 8.5H17V5h-2.5A4.5 4.5 0 0010 9.5V12H7.5v3H10v6h3.5v-6h2.7l.6-3h-3.3V9.5c0-.6.4-1 1-1z" fill="currentColor"/></svg>
+         
+          </a>
+          <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M21.6 8.2a2.5 2.5 0 00-1.8-1.8C18.2 6 12 6 12 6s-6.2 0-7.8.4A2.5 2.5 0 002.4 8.2 26 26 0 002 12a26 26 0 00.4 3.8 2.5 2.5 0 001.8 1.8c1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4a2.5 2.5 0 001.8-1.8A26 26 0 0022 12a26 26 0 00-.4-3.8zM10 15V9l5.2 3z" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#home" class="nav__brand" aria-label="Pixel Lens Photography — Back to top">
+          <svg class="nav__logo" viewBox="0 0 40 40" width="30" height="30" aria-hidden="true">
+            <circle cx="20" cy="20" r="17" fill="none" stroke="#3B82F6" stroke-width="2.5"/>
+            <circle cx="20" cy="20" r="8" fill="none" stroke="#3B82F6" stroke-width="2"/>
+            <circle cx="25" cy="14" r="2.6" fill="#3B82F6"/>
+          </svg>
+          <span class="nav__wordmark">PIXEL<em>LENS</em></span>
+        </a>
+        <p>A luxury photography studio crafting cinematic imagery for life's most important stories.</p>
+        <div class="socials socials--footer" aria-label="Social media links">
+          <a href="https://@sanjakanidarshanafernando" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="18" height="18"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg>
+          </a>
+          <a href="https://https://web.facebook.com/61559621254287/videos/?_rdc=1&_rdr#" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M14.5 8.5H17V5h-2.5A4.5 4.5 0 0010 9.5V12H7.5v3H10v6h3.5v-6h2.7l.6-3h-3.3V9.5c0-.6.4-1 1-1z" fill="currentColor"/></svg>
+          </a>
+          
+          </a>
+          <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M21.6 8.2a2.5 2.5 0 00-1.8-1.8C18.2 6 12 6 12 6s-6.2 0-7.8.4A2.5 2.5 0 002.4 8.2 26 26 0 002 12a26 26 0 00.4 3.8 2.5 2.5 0 001.8 1.8c1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4a2.5 2.5 0 001.8-1.8A26 26 0 0022 12a26 26 0 00-.4-3.8zM10 15V9l5.2 3z" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <h4>Explore</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+      </nav>
+      <nav class="footer__links" aria-label="Footer services navigation">
+        <h4>Services</h4>
+        <a href="#services">Wedding Photography</a>
+        <a href="#services">Portrait Photography</a>
+        <a href="#services">Event Photography</a>
+        <a href="#booking">Book a Session</a>
+      </nav>
+      <div class="footer__links">
+        <h4>Contact</h4>
+        <a href="mailto:@PixelLensPhotograpy">@PixelLensPhotograpy</a>
+        <a href="https://wa.me/760609648" target="_blank" rel="noopener">+94 760609648</a>
+        <a href="#contact">Sri Lanka</a>
+      </div>
+    </div>
+    <div class="container footer__bar">
+      <p>© 2026 Pixel Lens Photography. All rights reserved.</p>
+      <p>Capturing Moments. Creating Memories.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 19V6M6 12l6-6 6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
